@@ -4,7 +4,13 @@ import styles from "../../styles/search-page.module.css";
 import Link from "next/link";
 
 
-export function SearchSelect({ data, length, subtitle }) {
+type Props = {
+  data:[]
+  subtitle:boolean;
+  length:number
+};
+
+export function SearchSelect({ data, length, subtitle }:Props) {
 
   for (let i = length - 2; i > 0; i--) {
     let r = Math.floor(Math.random() * (i + 1));

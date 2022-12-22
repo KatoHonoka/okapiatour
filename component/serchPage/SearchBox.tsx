@@ -18,6 +18,7 @@ import { useState } from "react";
 
 type Props = {
   setUrl: Function;
+  setSubtitle:Function
 };
 
 export function SearchBox({ setUrl,setSubtitle }: Props) {
